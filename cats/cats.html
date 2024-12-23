@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar head-logo">
+        <h1>Galaxy>><span>Pro</span></h1>
+        <a href="/GalaxyPro/index.html">Go Home</a>
+    </div>
+    <header class="header">
+        <img src="images/cat2.png" alt="" class="cat1">
+        <h1>Welcome to the Cativerse</h1>
+        <p>Explore the fascinating world of cats, their breeds, habits, and more!</p>
+    </header>
+
+    <!-- meww sound -->
+    <audio id="meowSound" src="mew.mp3" preload="auto"></audio>
+
+    <section class="cat-carousel">
+        <h2>Meet the Cats</h2>
+        <div class="carousel-container">
+            <div class="carousel">
+                <div class="slide" data-topic="Mysterious Cat">
+                    <img src="images/mysCat.png" alt="Mysterious Cat" class="slide-img">
+                    <div class="slide-content">
+                        <h3>Mysterious Cat</h3>
+                        <p>Cats have been intertwined with mystery and folklore for centuries. 
+                            From their association with witches in the Middle Ages to their role as guardians of Egyptian temples, 
+                            their behavior and history continue to intrigue us. Did you know their eyes can reflect light in near-complete darkness, 
+                            adding to their aura of enigma?</p>
+                        <button class="more-button">Click More</button>
+                        <button class="like-button">❤️ Like (<span class="like-count">0</span>)</button>
+                    </div>
+                </div>
+                <div class="slide" data-topic="Alien Cat">
+                    <img src="images/alienCat.png" alt="Alien Cat" class="slide-img">
+                    <div class="slide-content">
+                        <h3>Alien Cat</h3>
+                        <p> Ever felt like your cat might have come from another planet? 
+                            Their unexplainable quirks—like zoomies, staring at nothing, or acting as though they see things humans cannot—have 
+                            sparked wild theories of extraterrestrial origins. Explore the idea that cats are here to observe humans for another 
+                            world!</p>
+                        <button class="more-button">Click More</button>
+                        <button class="like-button">❤️ Like (<span class="like-count">0</span>)</button>
+                    </div>
+                </div>
+                <div class="slide" data-topic="Cutie cat">
+                    <img src="images/cuteCat.png" alt="Cutie Cat" class="slide-img">
+                    <div class="slide-content">
+                        <h3>Cutie Cat</h3>
+                        <p> Whether it's their soft fur, playful antics, or those irresistible purrs, cats have perfected the art of cuteness. 
+                            Did you know that when cats knead with their paws, they’re re-enacting a behavior from kittenhood? 
+                            These little actions melt our hearts and make us adore them even more.</p>
+                        <button class="more-button">Click More</button>
+                        <button class="like-button">❤️ Like (<span class="like-count">0</span>)</button>
+                    </div>
+                </div>
+            </div>
+            <div class="controls">
+                <button id="prev">←</button>
+                <button id="next">→</button>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <div class="joke-section">
+        <h2>Cat Jokes</h2>
+        <div class="joke-container">
+          <p id="jokeDisplay">Click the button to get a cat joke!</p>
+          <button id="fetchJoke">Refresh Joke</button>
+        </div>
+    
+        <div class="submit-joke">
+          <h3>Submit Your Cat Joke</h3>
+          <form id="jokeForm">
+            <textarea id="userJoke" placeholder="Write your cat joke here..." required></textarea>
+            <input type="text" id="userName" placeholder="Your Name" required />
+            <button type="submit">Submit Joke</button>
+          </form>
+        </div>
+    
+        <div class="user-jokes">
+          <h3>User-Submitted Jokes</h3>
+          <p id="userJokeDisplay">No user-submitted jokes yet!</p>
+        </div>
+    </div>
+    
+    <section class="cat-facts">
+        <h2>Fun Cat Facts</h2>
+        <div class="fact-grid">
+          <div class="fact-item">
+            <h3>Fact 1</h3>
+            <p>Cats sleep for about 13-16 hours a day to conserve energy.</p>
+          </div>
+          <div class="fact-item">
+            <h3>Fact 2</h3>
+            <p>Each cat has a unique nose print, just like human fingerprints!</p>
+          </div>
+          <div class="fact-item">
+            <h3>Fact 3</h3>
+            <p>Cats communicate with humans through meowing, a trait they don't use with other cats.</p>
+          </div>
+        </div>
+    </section>
+    <section class="mysterious-cat-facts">
+        <h2 class="section-title">Mysterious Cat Facts</h2>
+        <p class="section-intro">
+          Discover some of the most fascinating and mysterious facts about cats. From their unique biology to their mystical history, dive into the secrets of these incredible creatures!
+        </p>
+      
+        <div class="facts-container">
+          <article class="mfact-item">
+            <h3>Fact 1: Cats Sleep A Lot</h3>
+            <p>
+              Cats sleep for about 12–16 hours a day on average, which is approximately 70% of their lives. This trait helps conserve their energy for hunting.
+            </p>
+          </article>
+      
+          <article class="mfact-item">
+            <h3>Fact 2: Ancient Worship</h3>
+            <p>
+              In ancient Egypt, cats were revered as sacred animals and were often mummified as offerings to their gods.
+            </p>
+          </article>
+      
+          <article class="mfact-item">
+            <h3>Fact 3: Superior Hearing</h3>
+            <p>
+              Cats can detect frequencies as high as 65,000 Hz, much beyond what humans and even dogs can hear.
+            </p>
+          </article>
+      
+          <article class="mfact-item">
+            <h3>Fact 4: Unique Nose Prints</h3>
+            <p>
+              Every cat's nose print is as unique as a human fingerprint. No two cats have the same nose pattern.
+            </p>
+          </article>
+      
+          <article class="mfact-item">
+            <h3>Fact 5: Whisker Power</h3>
+            <p>
+              Cats use their whiskers to measure the width of openings and navigate in the dark. They’re deeply rooted and highly sensitive.
+            </p>
+          </article>
+        </div>
+    </section>
+      
+    <footer class="footer">
+        <p>Explore more about cats. Stay curious!</p>
+    </footer>
+    
+    <script src="cats.js"></script>
+</body>
+</html>

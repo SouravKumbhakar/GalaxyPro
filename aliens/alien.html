@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alien Shooting Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="navbar head-logo">
+    <h1>Galaxy>><span>Pro</span></h1>
+    <a href="/GalaxyPro/index.html">Go Home</a>
+  </div>
+
+  <header class="alien-header">
+    <h1>Discover the Mysteries of Aliens</h1>
+    <div class="alien-images">
+        <img src="./images/banner1.png" alt="Alien 1" class="active">
+        <img src="./images/banner2.png" alt="Alien 2">
+        <img src="./images/banner3.png" alt="Alien 3">
+    </div>
+  </header>
+  <div id="documentation">
+    <h1>Alien Shooting Game</h1>
+    <p>This is a simple alien shooting game where you control a player who shoots at aliens.</p>
+    <p>Click the "Play Game" button to start.</p>
+    <button id="startGame">Play Game</button>
+  </div>
+
+  <div id="gamePage" style="display: none;">
+    <div id="gameInfo">Score: <span id="score">0</span></div>
+    <div id="restartModal">
+      <h2>All Aliens Are Destroyed!</h2>
+      <p>Score: <span id="finalScore"></span></p>
+      <button id="restartGame">Restart</button>
+      <button id="endGame">End Game</button>
+    </div>
+    <canvas id="gameCanvas"></canvas>
+  </div>
+
+  <main>
+    <!-- Section for Aliens in Movies -->
+    <section class="alien-section" id="movies">
+        <h2>Aliens in Movies</h2>
+        <div class="slider">
+            <img src="movie-alien1.jpg" alt="Movie Alien 1" class="active">
+            <img src="movie-alien2.jpg" alt="Movie Alien 2">
+            <img src="movie-alien3.jpg" alt="Movie Alien 3">
+        </div>
+        <br> 
+          Aliens have been a central theme in films, capturing human fascination with the unknown. From friendly visitors to hostile invaders, these extraterrestrial beings fuel captivating stories.  
+          <br/>
+          Examples of iconic alien movies:<br/>  
+          - *The Day the Earth Stood Still* (1951): A peaceful alien warns humanity.<br/>   
+          - *Close Encounters of the Third Kind* (1977): A tale of mysterious contact with aliens.<br/>   
+          - *E.T. the Extra-Terrestrial* (1982): A heartwarming bond between a boy and an alien. <br/>  
+          - *Independence Day* (1996): Humanity fights against alien invaders.<br/>   
+          - *Alien* (1979): A terrifying extraterrestrial in deep space horror.<br/>   
+          
+          These films showcase the endless allure of extraterrestrial tales.  </p>
+        <button onclick="searchGoogle('Aliens in Movies')">Explore More</button>
+    </section>
+
+    <!-- Section for Alien Pyramid Myth -->
+    <section class="alien-section" id="pyramids">
+        <h2>Alien Pyramid Myth</h2>
+        <div class="slider">
+            <img src="pyramid-alien1.jpg" alt="Pyramid Alien 1" class="active">
+            <img src="pyramid-alien2.jpg" alt="Pyramid Alien 2">
+            <img src="pyramid-alien3.jpg" alt="Pyramid Alien 3">
+        </div>
+        <p>Some theorists suggest that aliens may have played a role in the construction of ancient pyramids, citing advanced engineering techniques that seem beyond human capability at the time.</p>
+        <button onclick="searchGoogle('Alien Pyramid Myth')">Explore More</button>
+    </section>
+
+    <!-- Section for Alien and Wormhole Myth -->
+    <section class="alien-section" id="wormholes">
+        <h2>Alien and Wormhole Myth</h2>
+        <div class="slider">
+            <img src="wormhole-alien1.jpg" alt="Wormhole Alien 1" class="active">
+            <img src="wormhole-alien2.jpg" alt="Wormhole Alien 2">
+            <img src="wormhole-alien3.jpg" alt="Wormhole Alien 3">
+        </div>
+        <p>The idea that aliens use wormholes for intergalactic travel is a popular theory in science fiction, linking the unknown to advanced extraterrestrial technology.</p>
+        <button onclick="searchGoogle('Alien and Wormhole Myth')">Explore More</button>
+    </section>
+
+    <!-- Section for Area 57 -->
+    <section class="alien-section" id="area57">
+        <h2>Existence of Aliens in Area 57</h2>
+        <div class="slider">
+            <img src="area57-alien1.jpg" alt="Area 57 Alien 1" class="active">
+            <img src="area57-alien2.jpg" alt="Area 57 Alien 2">
+            <img src="area57-alien3.jpg" alt="Area 57 Alien 3">
+        </div>
+        <p>Area 57 is often cited in conspiracy theories as a secretive location where alien encounters and technologies are studied, fueling speculation about extraterrestrial life.</p>
+        <button onclick="searchGoogle('Existence of Aliens in Area 57')">Explore More</button>
+    </section>
+
+    <!-- User Response Form -->
+    <section class="response-form">
+        <h2>Share Your Thoughts</h2>
+        <form>
+            <label for="section">Select Section:</label>
+            <select id="section">
+                <option value="movies">Aliens in Movies</option>
+                <option value="pyramids">Alien Pyramid Myth</option>
+                <option value="wormholes">Alien and Wormhole Myth</option>
+                <option value="area57">Existence of Aliens in Area 57</option>
+            </select>
+            <label for="response">Your Response:</label>
+            <textarea id="response" rows="4" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+  </main>
+
+  <script src="game.js"></script>
+</body>
+</html>

@@ -1,0 +1,213 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #202020; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #202020, #302b63, #202020); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #202020, #45444f, #202020); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #dadada;
+}
+
+.head-logo h1{
+  font-family: ROG Fonts;
+  color: #919197;
+}
+
+.head-logo h1 span{
+  color: #b6b6b6;
+  transition: 0.5s ease;
+}
+
+.head-logo h1:hover span{
+  color: #df49a6;
+}
+
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem ;
+}
+
+.navbar a{
+  text-decoration: none;
+  padding: 10px 20px;
+  background: rgb(255, 114, 63);
+  color: white;
+  border-radius: 8px;
+}
+
+header {
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.alien-header {
+  position: relative;
+}
+
+.alien-images{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 700px;
+}
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100px;
+}
+.alien-images img, .slider img {
+  max-width: 90%;
+  height: auto;
+  border-radius: 50px;
+  position: absolute;
+  transition: opacity 0.5s ease-in-out;
+  opacity: 0;
+}
+
+.alien-images img.active, .slider img.active {
+  opacity: 1;
+}
+
+/* Alien Section Styles */
+.alien-section {
+  margin: 20px;
+  padding: 20px;
+  background-color: #fff;
+  color: #202020;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Button Styles */
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Form Styles */
+.response-form {
+  margin: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  display: inline-block;
+  margin-top: 10px;
+}
+  canvas {
+    display: block;
+    margin: 0 auto;
+    border: 1px solid white;
+    width: 800px;  /* Set a fixed width */
+    height: 600px; /* Set a fixed height */
+  }
+  
+  #gameInfo {
+    font-size: 1.2rem;
+  }
+  
+  #startGame {
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    background: limegreen;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+  }
+  
+  #startGame:hover {
+    background: green;
+  }
+  
+  #gamePage {
+    display: none;
+    text-align: center;
+  }
+  
+  #restartModal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  #restartModal button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    background: limegreen;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  #restartModal button:hover {
+    background: green;
+  }
+  
+  #documentation {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  #endGame {
+    padding: 10px 20px;
+    margin-top: 10px;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  #endGame:hover {
+    background: darkred;
+  }
+
